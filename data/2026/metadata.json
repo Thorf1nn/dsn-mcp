@@ -2,11 +2,17 @@
   "ct_version": "CT2026.1.2",
   "norm_year": 2026,
   "publication_date": "",
-  "extraction_date": "",
+  "extraction_date": "2026-03-03",
+  "sources": [
+    "xlsx",
+    "pdf"
+  ],
   "stats": {
-    "total_blocs": 61,
-    "total_rubriques": 502,
-    "total_cch_controls": 443,
-    "total_enum_values": 1623
+    "total_blocs": 62,
+    "total_rubriques": 573,
+    "total_cch_controls": 622,
+    "total_sig_controls": 59,
+    "total_csl_controls": 90,
+    "total_enum_values": 1639
   }
 }

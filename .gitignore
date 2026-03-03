@@ -12,3 +12,6 @@ build/
 
 # Raw source files (PDFs, XLSX) - too large for git
 data/sources/
+
+# MCP config (chemins absolus spécifiques à chaque machine)
+.mcp.json

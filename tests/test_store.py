@@ -59,3 +59,36 @@ def test_get_controls_filter(store: DSNDataStore) -> None:
 def test_resolve_version_error(store: DSNDataStore) -> None:
     with pytest.raises(ValueError, match="non chargée"):
         store._resolve_version("9999")
+
+
+def test_bloc_names_clean(store: DSNDataStore) -> None:
+    """Vérifie que les noms de blocs sont propres (pas de bruit du PDF)."""
+    bloc = store.get_bloc("S21.G00.40")
+    assert bloc is not None
+    assert bloc.name == "Contrat (contrat de travail, convention, mandat)"
+
+    bloc_ind = store.get_bloc("S21.G00.30")
+    assert bloc_ind is not None
+    assert bloc_ind.name == "Individu"
+
+
+def test_rubrique_enumerations(store: DSNDataStore) -> None:
+    """Vérifie que S21.G00.40.007 (Nature du contrat) a ses énumérations."""
+    _, rub = store.get_rubrique("S21.G00.40.007")
+    assert rub is not None
+    assert rub.enumeration is not None
+    assert len(rub.enumeration) >= 20  # 26 valeurs attendues
+    codes = [e.code for e in rub.enumeration]
+    assert "01" in codes  # CDI
+    assert "02" in codes  # CDD
+
+
+def test_rubrique_data_quality(store: DSNDataStore) -> None:
+    """Vérifie la qualité des données d'une rubrique."""
+    _, rub = store.get_rubrique("S21.G00.40.001")
+    assert rub is not None
+    assert rub.label == "Date de début du contrat"
+    assert rub.technical_name == "Contrat.DateDebut"
+    assert rub.data_type == "D"
+    assert rub.description is not None
+    assert len(rub.description) > 50
