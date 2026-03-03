@@ -1,0 +1,22 @@
+{
+  "version": "CT2025.1.3",
+  "usages": {
+    "S21.G00.06.001": {"model_01": "O", "model_04": "O", "model_05": "O", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.11.001": {"model_01": "O", "model_04": "O", "model_05": "O", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.30.001": {"model_01": "O", "model_04": "O", "model_05": "O", "model_07": "O", "model_08": "O", "model_09": "C"},
+    "S21.G00.30.006": {"model_01": "O", "model_04": "O", "model_05": "O", "model_07": "O", "model_08": "O", "model_09": "C"},
+    "S21.G00.40.001": {"model_01": "O", "model_04": "C", "model_05": "C", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.40.002": {"model_01": "O", "model_04": "C", "model_05": "C", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.40.003": {"model_01": "O", "model_04": "C", "model_05": "C", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.40.007": {"model_01": "O", "model_04": "C", "model_05": "C", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.40.008": {"model_01": "C", "model_04": "C", "model_05": "C", "model_07": "C", "model_08": "C", "model_09": "C"},
+    "S21.G00.40.009": {"model_01": "O", "model_04": "O", "model_05": "O", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.40.017": {"model_01": "O", "model_04": "C", "model_05": "C", "model_07": "O", "model_08": "O", "model_09": "O"},
+    "S21.G00.60.001": {"model_01": "C", "model_04": "O", "model_05": "N", "model_07": "N", "model_08": "N", "model_09": "N"},
+    "S21.G00.60.002": {"model_01": "C", "model_04": "O", "model_05": "N", "model_07": "N", "model_08": "N", "model_09": "N"},
+    "S21.G00.62.001": {"model_01": "C", "model_04": "N", "model_05": "N", "model_07": "O", "model_08": "N", "model_09": "N"},
+    "S21.G00.62.002": {"model_01": "C", "model_04": "N", "model_05": "N", "model_07": "O", "model_08": "N", "model_09": "N"},
+    "S21.G00.82.001": {"model_01": "C", "model_04": "N", "model_05": "N", "model_07": "N", "model_08": "N", "model_09": "N"},
+    "S21.G00.82.002": {"model_01": "C", "model_04": "N", "model_05": "N", "model_07": "N", "model_08": "N", "model_09": "N"}
+  }
+}

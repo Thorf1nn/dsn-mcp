@@ -1,0 +1,21 @@
+{
+  "version": "CT2025.1.3",
+  "tables": {
+    "IDCC": {
+      "name": "IDCC - Identifiant de Convention Collective",
+      "description": "Table des identifiants de conventions collectives nationales.",
+      "values": [
+        {"code": "0044", "label": "Industries chimiques et connexes"},
+        {"code": "0054", "label": "Métallurgie (région parisienne)"},
+        {"code": "0176", "label": "Industrie pharmaceutique"},
+        {"code": "0573", "label": "Commerces de gros"},
+        {"code": "1090", "label": "Services de l'automobile"},
+        {"code": "1486", "label": "Bureaux d'études techniques (Syntec)"},
+        {"code": "1518", "label": "Animation"},
+        {"code": "1606", "label": "Bricolage (vente au détail)"},
+        {"code": "2098", "label": "Prestataires de services du secteur tertiaire"},
+        {"code": "3248", "label": "Métallurgie (nouvelle convention nationale)"}
+      ]
+    }
+  }
+}
