@@ -11,7 +11,7 @@ Permet à un LLM (Claude, etc.) de rechercher des rubriques, consulter les règl
 ### Windows (PowerShell ou CMD)
 
 ```bat
-git clone <url-du-repo> dsn-mcp
+git clone https://github.com/Thorf1nn/dsn-mcp.git
 cd dsn-mcp
 install.bat
 ```
@@ -19,7 +19,7 @@ install.bat
 ### Linux / macOS / Git Bash
 
 ```bash
-git clone <url-du-repo> dsn-mcp
+git clone https://github.com/Thorf1nn/dsn-mcp.git
 cd dsn-mcp
 chmod +x install.sh
 ./install.sh
@@ -30,11 +30,11 @@ Le script d'installation :
 2. Installe les dépendances
 3. Propose de configurer automatiquement **Claude Code** et/ou **Claude Desktop**
 
-## Installation manuelle
+### Installation manuelle
 
 ```bash
 # 1. Cloner le repo
-git clone <url-du-repo> dsn-mcp
+git clone https://github.com/Thorf1nn/dsn-mcp.git
 cd dsn-mcp
 
 # 2. Créer l'environnement virtuel
@@ -133,8 +133,7 @@ Les données pré-extraites sont incluses dans le repo :
 dsn-mcp/
 ├── main.py                  # Point d'entrée du serveur MCP
 ├── pyproject.toml            # Dépendances et configuration
-├── install.sh                # Script d'installation Linux/macOS
-├── install.bat               # Script d'installation Windows
+├── install.sh / install.bat  # Scripts d'installation
 ├── data/
 │   ├── 2025/                 # Données CT2025 (JSON pré-parsés)
 │   └── 2026/                 # Données CT2026

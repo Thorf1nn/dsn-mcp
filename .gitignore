@@ -15,3 +15,6 @@ data/sources/
 
 # MCP config (chemins absolus spécifiques à chaque machine)
 .mcp.json
+
+# Cloudflare Workers (déploiement privé)
+worker/
