@@ -1,0 +1,12 @@
+{
+  "ct_version": "CT2025.1.3",
+  "norm_year": 2025,
+  "publication_date": "",
+  "extraction_date": "",
+  "stats": {
+    "total_blocs": 61,
+    "total_rubriques": 491,
+    "total_cch_controls": 419,
+    "total_enum_values": 1588
+  }
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+.env
+.ruff_cache/
+.pytest_cache/
+
+# Raw source files (PDFs, XLSX) - too large for git
+data/sources/

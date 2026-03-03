@@ -1,0 +1,12 @@
+{
+  "ct_version": "CT2026.1.2",
+  "norm_year": 2026,
+  "publication_date": "",
+  "extraction_date": "",
+  "stats": {
+    "total_blocs": 61,
+    "total_rubriques": 502,
+    "total_cch_controls": 443,
+    "total_enum_values": 1623
+  }
+}

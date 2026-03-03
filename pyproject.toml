@@ -1,0 +1,35 @@
+[project]
+name = "dsn-mcp"
+version = "0.1.0"
+description = "MCP server for querying the DSN Cahier Technique (NEODeS norm)"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.25.0,<2",
+    "httpx>=0.28.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+extraction = [
+    "pdfplumber>=0.11.0",
+    "openpyxl>=3.1.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.14.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["dsn_mcp*"]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
